@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "258d848f-5fc9-47fd-b3a0-2aa85eb82072",
+		"name": "NASA Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5604701"
+	},
+	"item": [
+		{
+			"name": "get short",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "u=0, i"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "none"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "_ga=GA1.1.411703244.1758896536; _ga_82GWVTTXCZ=GS2.1.s1758897171$o1$g1$t1758897225$j6$l0$h0; _ga_CSLL4ZEK4L=GS2.1.s1758896536$o1$g1$t1758897251$j34$l0$h0"
+					}
+				],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?api_key=xpYo5EGdkkT9GuqPU3939uTN24u9qYHMQqCcpIPp",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "xpYo5EGdkkT9GuqPU3939uTN24u9qYHMQqCcpIPp"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://api.nasa.gov/planetary/apod?api_key=xpYo5EGdkkT9GuqPU3939uTN24u9qYHMQqCcpIPp' \\\r\n  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -b '_ga=GA1.1.411703244.1758896536; _ga_82GWVTTXCZ=GS2.1.s1758897171$o1$g1$t1758897225$j6$l0$h0; _ga_CSLL4ZEK4L=GS2.1.s1758896536$o1$g1$t1758897251$j34$l0$h0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: u=0, i' \\\r\n  -H 'sec-ch-ua: \"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: document' \\\r\n  -H 'sec-fetch-mode: navigate' \\\r\n  -H 'sec-fetch-site: none' \\\r\n  -H 'sec-fetch-user: ?1' \\\r\n  -H 'upgrade-insecure-requests: 1' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "get full APOD",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "User-Agent",
+						"value": "curl/7.79.1"
+					}
+				],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?api_key=xpYo5EGdkkT9GuqPU3939uTN24u9qYHMQqCcpIPp",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "xpYo5EGdkkT9GuqPU3939uTN24u9qYHMQqCcpIPp"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl \"https://api.nasa.gov/planetary/apod?api_key=xpYo5EGdkkT9GuqPU3939uTN24u9qYHMQqCcpIPp\" \\\r\n  -H \"Accept: application/json\" \\\r\n  -H \"User-Agent: curl/7.79.1\"\r\n"
+			},
+			"response": [
+				{
+					"name": "https://api.nasa.gov/planetary/apod?api_key=xpYo5EGdkkT9GuqPU3939uTN24u9qYHMQqCcpIPp",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "User-Agent",
+								"value": "curl/7.79.1"
+							}
+						],
+						"url": {
+							"raw": "https://api.nasa.gov/planetary/apod?api_key=xpYo5EGdkkT9GuqPU3939uTN24u9qYHMQqCcpIPp",
+							"protocol": "https",
+							"host": [
+								"api",
+								"nasa",
+								"gov"
+							],
+							"path": [
+								"planetary",
+								"apod"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "xpYo5EGdkkT9GuqPU3939uTN24u9qYHMQqCcpIPp"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Fri, 26 Sep 2025 15:33:39 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "X-RateLimit-Limit, X-RateLimit-Remaining"
+						},
+						{
+							"key": "Age",
+							"value": "0"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Via",
+							"value": "https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])"
+						},
+						{
+							"key": "X-Api-Umbrella-Request-Id",
+							"value": "cpgqk9c6h95k0p7rbc60"
+						},
+						{
+							"key": "X-Cache",
+							"value": "MISS"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Ratelimit-Limit",
+							"value": "4000"
+						},
+						{
+							"key": "X-Ratelimit-Remaining",
+							"value": "3994"
+						},
+						{
+							"key": "X-Vcap-Request-Id",
+							"value": "05974a4f-bcd1-41b6-5098-aba880d15634"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"copyright\": \"Adam Block\",\n    \"date\": \"2025-09-26\",\n    \"explanation\": \"A new visitor to the inner Solar System, comet C/2025 R2 (SWAN) sports a long ion tail extending diagonally across this almost 7 degree wide telescopic field of view recorded on September 21. A fainter fellow comet also making its inner Solar System debut, C/2025 K1 (ATLAS), can be spotted above and left of SWAN's greenish coma, just visible against the background sea of stars in the constellation Virgo. Both new comets were only discovered in 2025 and are joined in this celestial frame by ruddy planet Mars (bottom), a more familiar wanderer in planet Earth's night skies. The comets may appear to be in a race, nearly neck and neck in their voyage through the inner Solar System and around the Sun. But this comet SWAN has already reached its perihelion or closest approach to the Sun on September 12 and is now outbound along its orbit. This comet ATLAS is still inbound though, and will make its perihelion passage on October 8.\",\n    \"hdurl\": \"https://apod.nasa.gov/apod/image/2509/C2025_R2_Swan_20250921s.jpg\",\n    \"media_type\": \"image\",\n    \"service_version\": \"v1\",\n    \"title\": \"A SWAN, an ATLAS, and Mars\",\n    \"url\": \"https://apod.nasa.gov/apod/image/2509/C2025_R2_Swan_20250921s1024.jpg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://api.nasa.gov/planetary/apod?start_date=2025-09-01&end_date=2025-09-05&api_key=DEMO_KEY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.nasa.gov/planetary/apod?start_date=2025-09-01&end_date=2025-09-05&api_key=DEMO_KEY",
+					"protocol": "https",
+					"host": [
+						"api",
+						"nasa",
+						"gov"
+					],
+					"path": [
+						"planetary",
+						"apod"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2025-09-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2025-09-05"
+						},
+						{
+							"key": "api_key",
+							"value": "DEMO_KEY"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl \"https://api.nasa.gov/planetary/apod?start_date=2025-09-01&end_date=2025-09-05&api_key=DEMO_KEY\"\r\n"
+			},
+			"response": []
+		}
+	]
+}
